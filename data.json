@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "tipo": "Placa de Video",
+        "modelo": "ASUS AMD RX 7600",
+        "imagen": "./assets/img/RX7600.jpg",
+        "precio": 395000
+    },
+    {
+        "id": 2,
+        "tipo": "Procesador",
+        "modelo": "AMD Ryzen 5600X",
+        "imagen": "./assets/img/5600x.jpg",
+        "precio": 275000
+    },
+    {
+        "id": 3,
+        "tipo": "Motherboard",
+        "modelo": "ASUS PRIME B550",
+        "imagen": "./assets/img/motherB550.jpg",
+        "precio": 141000
+    },
+    {
+        "id": 4,
+        "tipo": "Disco Sólido",
+        "modelo": "WD Black SN770 500GB",
+        "imagen": "./assets/img/ssdSN770.png",
+        "precio": 78810
+    },
+    {
+        "id": 5,
+        "tipo": "Memoria RAM",
+        "modelo": "Kingston Fury Beast 16GB",
+        "imagen": "./assets/img/RAMfury.jpg",
+        "precio": 29900
+    }
+]

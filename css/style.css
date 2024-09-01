@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background-color: rgb(70, 70, 70);
+}
+
+.loader {
+    color: #ffffff;
+    font-size: 45px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    transform: translateZ(0);
+    animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+}
+@keyframes mltShdSpin {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em,
+        0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+        0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%, 95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 
+        0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 
+        0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%, 59% {
+        box-shadow: 0 -0.83em 0 -0.4em, 
+        -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, 
+        -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+        -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, 
+        -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+        -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, 
+        -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 
+        0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+@keyframes round {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+
+h1{
+    font-family: 'Open Sans';
+    text-decoration: underline;
+}
+p{
+    font-family: 'Open Sans';
+    color: rgb(15, 15, 15);
+}
+
+.titulo{
+    text-align: center;
+    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.304);
+    background-color: dodgerblue;
+    padding: 25px 0px 25px 0px;
+    margin-bottom: 25px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.324);
+}
+
+#catalogo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+.producto{
+    background-image: linear-gradient(to bottom right, rgb(245, 245, 245), rgb(177, 177, 177));
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.324);
+}
+.productoContenido{
+    box-shadow: 13px 18px 15px rgba(0, 0, 0, 0.324);
+}
+
+.agregarAlCarritoBoton{
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.324);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    &:hover{
+        background-color: rgb(200, 200, 200);
+        transition: 0.2s;   
+    }
+    &:active{
+        background-color: rgb(150, 150, 150);
+        transition: 0.2s;
+    }
+}
+.carritoBoton{
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    margin: 20px 60px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.324);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    &:hover{
+        background-color: rgb(200, 200, 200);
+        transition: 0.2s;   
+    }
+    &:active{
+        background-color: rgb(150, 150, 150);
+        transition: 0.2s;
+    }
+}
+.mostrarCarritoTexto{
+    font-family: 'Open Sans';
+    margin-left: 60px;
+}
+#carritoContenedor{
+    margin-bottom: 60px;
+}
